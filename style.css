@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+}
+  
+  /* Navbar links */
+  
+.navbar a {
+    margin-right: 50px;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    color: rgb(17, 15, 15);
+    text-decoration: none;
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+  }
+  .navbar ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+  }
+  
+  .navbar ul li ::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: #009688;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+  }
+
+  .navbar ul li:hover::after{
+      width: 100%
+  }
+  
